@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_navigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,17 +76,16 @@
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="vhm-Ug-IU6" id="twr-c4-XRT"/>
-                        <outlet property="logo" destination="IAS-J9-omT" id="vvO-ab-IZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="21W-qS-xCr">
             <objects>
-                <viewController id="9FV-lf-XRv" sceneMemberID="viewController">
+                <viewController id="9FV-lf-XRv" customClass="LeagueVC" customModule="app_navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vqY-An-aIa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,9 +158,12 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="9FV-lf-XRv" eventType="touchUpInside" id="afl-jU-HbN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-VA-lvT">
-                                <rect key="frame" x="10" y="20" width="46" height="38"/>
+                                <rect key="frame" x="10" y="30" width="46" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="37l-cr-fai"/>
                                     <constraint firstAttribute="height" constant="38" id="QXP-mC-5H7"/>
@@ -187,22 +189,25 @@
                             <constraint firstItem="6ma-px-fM3" firstAttribute="trailing" secondItem="zOH-qq-WVV" secondAttribute="trailing" id="gc8-Eg-8gz"/>
                             <constraint firstItem="mT6-JF-NQ8" firstAttribute="bottom" secondItem="6ma-px-fM3" secondAttribute="bottom" id="mB0-V4-g4l"/>
                             <constraint firstItem="6ma-px-fM3" firstAttribute="trailing" secondItem="Lmb-74-093" secondAttribute="trailing" constant="16" id="mON-fa-NLH"/>
-                            <constraint firstItem="uWG-VA-lvT" firstAttribute="top" secondItem="6ma-px-fM3" secondAttribute="top" id="qjx-if-jmt"/>
+                            <constraint firstItem="uWG-VA-lvT" firstAttribute="top" secondItem="6ma-px-fM3" secondAttribute="top" constant="10" id="qjx-if-jmt"/>
                             <constraint firstItem="mT6-JF-NQ8" firstAttribute="trailing" secondItem="6ma-px-fM3" secondAttribute="trailing" id="u2y-hz-2Gc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ma-px-fM3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eda-gh-cYn"/>
+                    <connections>
+                        <segue destination="8ya-EF-fjj" kind="show" identifier="skillVCSegue" id="sYB-w8-T5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzD-Bq-0OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gOO-2G-4Ri" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1812" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="Bmz-ri-R4P">
             <objects>
-                <viewController id="8ya-EF-fjj" sceneMemberID="viewController">
+                <viewController id="8ya-EF-fjj" customClass="SkillVC" customModule="app_navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2U-kh-NFS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
