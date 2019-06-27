@@ -10,11 +10,16 @@ import UIKit
 
 // 스킬 뷰 컨트롤러 클래스
 class SkillVC: UIViewController {
-
+    
+    // ! nil 이 안될거다 라고 선언 
+    var player: Player!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        print(player.desiredLeague)
     }
     
 
