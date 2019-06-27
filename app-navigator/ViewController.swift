@@ -29,6 +29,16 @@ class ViewController: UIViewController {
         
     }
     
+    
+//    @IBAction func unwindFromSkillVC(){
+//
+//    }
+    // 이전 뷰로 돌아간다.
+    //Interface Builder Action: IBAction
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
 
     
 
