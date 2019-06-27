@@ -12,6 +12,7 @@
 		6A72C79522C417FE0096E782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A72C79322C417FE0096E782 /* Main.storyboard */; };
 		6A72C79722C417FF0096E782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A72C79622C417FF0096E782 /* Assets.xcassets */; };
 		6A72C79A22C417FF0096E782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A72C79822C417FF0096E782 /* LaunchScreen.storyboard */; };
+		6A95AD0D22C4886A009FDE28 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95AD0C22C4886A009FDE28 /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6A72C79622C417FF0096E782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A72C79922C417FF0096E782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A72C79B22C417FF0096E782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A95AD0C22C4886A009FDE28 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6A72C78E22C417FE0096E782 /* app-navigator */ = {
 			isa = PBXGroup;
 			children = (
+				6A95AD0B22C48846009FDE28 /* Views */,
 				6A72C78F22C417FE0096E782 /* AppDelegate.swift */,
 				6A72C79122C417FE0096E782 /* ViewController.swift */,
 				6A72C79322C417FE0096E782 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				6A72C79B22C417FF0096E782 /* Info.plist */,
 			);
 			path = "app-navigator";
+			sourceTree = "<group>";
+		};
+		6A95AD0B22C48846009FDE28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A95AD0C22C4886A009FDE28 /* BorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				6A72C79222C417FE0096E782 /* ViewController.swift in Sources */,
 				6A72C79022C417FE0096E782 /* AppDelegate.swift in Sources */,
+				6A95AD0D22C4886A009FDE28 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XDG42679;
 				INFOPLIST_FILE = "app-navigator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XDG42679;
 				INFOPLIST_FILE = "app-navigator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
