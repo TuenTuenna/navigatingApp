@@ -123,6 +123,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="9FV-lf-XRv" eventType="touchUpInside" id="hN2-Ek-rEp"/>
+                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrW-Wb-naN" customClass="BorderButton" customModule="app_navigator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="355" height="50"/>
@@ -134,6 +137,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="9FV-lf-XRv" eventType="touchUpInside" id="2v5-7o-6G2"/>
+                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT4-23-6gL" customClass="BorderButton" customModule="app_navigator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="355" height="50"/>
@@ -145,10 +151,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="9FV-lf-XRv" eventType="touchUpInside" id="oGS-CG-RkX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-74-093" customClass="BorderButton" customModule="app_navigator" customModuleProvider="target">
+                            <button contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-74-093" customClass="BorderButton" customModule="app_navigator" customModuleProvider="target">
                                 <rect key="frame" x="16" y="577" width="343" height="70"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.42829623290000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -196,6 +205,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Eda-gh-cYn"/>
                     <connections>
+                        <outlet property="nextBtn" destination="Lmb-74-093" id="HYm-AU-xBP"/>
                         <segue destination="8ya-EF-fjj" kind="show" identifier="skillVCSegue" id="sYB-w8-T5R"/>
                     </connections>
                 </viewController>
